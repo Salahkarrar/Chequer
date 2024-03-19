@@ -61,6 +61,16 @@ namespace Chequer.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _150x120 {
+            get {
+                object obj = ResourceManager.GetObject("150x120", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to AAY | IIS |.
         /// </summary>
         internal static string AppName {
@@ -456,26 +466,6 @@ namespace Chequer.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Medicine {
-            get {
-                object obj = ResourceManager.GetObject("Medicine", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Medicine_Back {
-            get {
-                object obj = ResourceManager.GetObject("Medicine_Back", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to @0.
         /// </summary>
         internal static string P0 {
@@ -499,6 +489,16 @@ namespace Chequer.Properties {
         internal static string PathBackup {
             get {
                 return ResourceManager.GetString("PathBackup", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pay {
+            get {
+                object obj = ResourceManager.GetObject("pay", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
     }

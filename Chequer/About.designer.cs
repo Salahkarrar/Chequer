@@ -84,7 +84,7 @@
             // 
             // logoPictureBox
             // 
-            this.logoPictureBox.BackgroundImage = global::Chequer.Properties.Resources.Medicine;
+            this.logoPictureBox.BackgroundImage = global::Chequer.Properties.Resources._150x120;
             this.logoPictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.logoPictureBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.logoPictureBox.Location = new System.Drawing.Point(3, 3);
@@ -180,7 +180,7 @@
             // 
             // About
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(202)))), ((int)(((byte)(233)))));
             this.ClientSize = new System.Drawing.Size(510, 327);

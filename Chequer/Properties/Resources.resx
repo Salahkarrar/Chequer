@@ -143,6 +143,9 @@
   <data name="Dark_Cancel_18" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Dark_Cancel_18.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Dark_Account_18" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Dark_Account_18.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Dark_Print_18" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Dark_Print_18.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -150,11 +153,11 @@
     <value>Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\Database\Chequer.mdb;Persist Security Info=True;Jet OLEDB:Database Password=Chequer@2022$</value>
     <comment>Provider=Microsoft.Jet.OLEDB.4.0;Data Source=|DataDirectory|\Database\Chequer.mdb;Persist Security Info=True;Jet OLEDB:Database Password=Chequer@2022$</comment>
   </data>
+  <data name="P0" xml:space="preserve">
+    <value>@0</value>
+  </data>
   <data name="Dark_Arrow_Left_36" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Dark_Arrow_Left_36.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Dark_Settings_36" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Dark_Settings_36.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Dark_Folder_18" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Dark_Folder_18.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -188,24 +191,33 @@
   <data name="Dark_Search_18" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Dark_Search_18.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Cheque Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cheque Icon1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Dark_Exit_18" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Dark_Exit_18.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Dark_Add_18" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Dark_Add_18.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="150x120" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\150x120.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FileExist" xml:space="preserve">
+    <value>File Exist</value>
+  </data>
   <data name="Dark_Edit_18" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Dark_Edit_18.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="P0" xml:space="preserve">
-    <value>@0</value>
+  <data name="AppName" xml:space="preserve">
+    <value>AAY | IIS |</value>
   </data>
   <data name="MD00" xml:space="preserve">
     <value>Data Saved</value>
     <comment>Messages</comment>
   </data>
-  <data name="Medicine" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Medicine.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Dark_Save_18" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Dark_Save_18.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="MD01" xml:space="preserve">
     <value>Data Updated</value>
@@ -217,11 +229,11 @@
   <data name="Dark_Copyright_18" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Dark_Copyright_18.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Dark_Save_18" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Dark_Save_18.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Dark_Settings_36" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Dark_Settings_36.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Dark_Account_18" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Dark_Account_18.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="E1" xml:space="preserve">
+    <value>Error</value>
   </data>
   <data name="L02" xml:space="preserve">
     <value>Failed</value>
@@ -234,6 +246,9 @@
     <value>Can't Connect to Server Please Recheck It or Call The System Administrator</value>
     <comment>MessageBox Line 114 + 167</comment>
   </data>
+  <data name="E11" xml:space="preserve">
+    <value>There is Some Problem</value>
+  </data>
   <data name="PathBackup" xml:space="preserve">
     <value>|DataDirectory|\Backup\</value>
   </data>
@@ -243,25 +258,10 @@
   <data name="Dark_Report_36" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Dark_Report_36.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Medicine_Back" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Medicine Back.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Cheque Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Cheque Icon1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="E1" xml:space="preserve">
-    <value>Error</value>
-  </data>
-  <data name="E11" xml:space="preserve">
-    <value>There is Some Problem</value>
-  </data>
-  <data name="FileExist" xml:space="preserve">
-    <value>File Exist</value>
-  </data>
   <data name="Information" xml:space="preserve">
     <value>Information</value>
   </data>
-  <data name="AppName" xml:space="preserve">
-    <value>AAY | IIS |</value>
+  <data name="pay" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pay.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
