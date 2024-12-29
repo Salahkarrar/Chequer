@@ -34,9 +34,9 @@ namespace Chequer
         public string ID { get; set; }
         public string UserID { get; set; }
         public string UserName { get; set; }
-        public string Authority { get; set; }
         public string RoleID { get; set; }
         public string RoleName { get; set; }
+        public string Status { get; set; }
         public List<PROAuth> List { get; set; }
         public List<PrinterPro> List2 { get; set; }
 
@@ -88,12 +88,49 @@ namespace Chequer
             try
             {
                 OpenConnection(); // Open database connection
-                ValidateUser(); // Validate the user
+                // Validate user credentials
+                if (ValidateUser(PassWord.Text))
+                {
+                    // Check if the user status is "Changed"
+                    if (Status == "Changed")
+                    {
+                        OpenMainForm();
+                    }
+                    else
+                    {
+                        OpenChangePassForm();
+                    }
+                    PassWord.Clear();
+                }
+                else
+                {
+                    MessageBoxEx.Show("Incorrect password, please try again.", "Password", 5000);
+                }
             }
             catch (Exception ex)
             {
                 // Show error message
                 ShowErrorMessage("Can't Connect to Database, Please Recheck The Server or Call System Administrator", ex, "Error Login - 1001");
+            }
+        }
+
+        private void OpenMainForm()
+        {
+            // Hide the login form and open the main form
+            Hide();
+            PassWord.Text = string.Empty;
+            using (Main mainForm = new Main())
+            {
+                mainForm.ShowDialog();
+            }
+        }
+
+        private void OpenChangePassForm()
+        {
+            // Open the change password form
+            using (ChangePass changePassForm = new ChangePass())
+            {
+                changePassForm.ShowDialog();
             }
         }
 
@@ -103,6 +140,7 @@ namespace Chequer
             _connection.Dispose(); // Dispose the connection
             MessageBoxEx.Show("GoodBye", "Exit", 700); // Show goodbye message
             Application.Exit(); // Exit the application
+            Environment.Exit(0); // Exit the environment
         }
 
         // Event handler for change password menu item click
@@ -225,29 +263,34 @@ namespace Chequer
         }
 
         // Method to validate the user
-        private void ValidateUser()
+        private bool ValidateUser(string password)
         {
-            var command = new OleDbCommand("SELECT * FROM T_Users WHERE PWord = @Password", _connection);
-            command.Parameters.AddWithValue("@Password", PassWord.Text);
-
-            var reader = command.ExecuteReader();
-            if (reader.Read())
+            int userCount = 0;
+            try
             {
-                ID = reader["ID"].ToString();
-                RoleID = reader["RoleId"].ToString();
-                UserName = reader["UserName"].ToString();
-                UserID = reader["UserID"].ToString();
-
-                Hide();
-                PassWord.Text = string.Empty;
-                var mainForm = new Main();
-                mainForm.ShowDialog();
+                // Query the database to validate the user
+                using (OleDbCommand cmd = new OleDbCommand("SELECT * FROM T_Users WHERE PWord=@0", _connection))
+                {
+                    cmd.Parameters.AddWithValue("@0", password);
+                    using (OleDbDataReader reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            userCount = 1;
+                            ID = reader["ID"].ToString();
+                            UserName = reader["UserName"].ToString();
+                            RoleID = reader["RoleID"].ToString();
+                            Status = reader["UserStatus"].ToString();
+                        }
+                    }
+                    cmd.Parameters.Clear();
+                }
             }
-            else
+            catch
             {
-                MessageBoxEx.Show("Password Not Correct.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error, 1000);
-                PassWord.Text = string.Empty;
+                throw;
             }
+            return userCount == 1 && ID != null;
         }
 
         // Method to execute a query with error handling
